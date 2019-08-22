@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href=“https://fonts.googleapis.com/css?family=Open+Sans&display=swap” rel=“stylesheet”>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css?v=<?php echo uniqid();?>"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css?v=<?php echo uniqid();?>" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.5/js/dataTables.rowReorder.min.js">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js">
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <title>Red Flags</title>
+</head>
+    <div class="topnav">
+      <a href="#home" class="redflag">Red Flags</a>
+      <div id="myLinks">
+        <form class="form-group"><input type="text" class="form-control searchbarsize" placeholder="Search"></form>
+        <a href="#news">Features</a>
+        <a href="#contact">How it works</a>
+        <a href="#about">Contact</a>
+        <!-- <a href="#profile"><img class="imgprofile" src="img/bgCircle.svg"></a> -->
+      </div>
+      <a href="javascript:void(0);" class="icon" id="burger">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+        <div class="row top-header width100">
+          <div class="container-fluid d-flex">
+            <div class="col-lg-3 d-flex align-self-center padding40">
+              <img src="img/flag003.svg">
+                <p class="redflag">Red Flags</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-self-center" align="center">
+              <form class="form-group form2"><input type="text" class="form-control searchbarsize" placeholder="Search"></form>
+            </div>
+            <div class="col-lg-3 align-self-center d-flex" align="center">
+                <a class="one" href="#">Features</a>
+                <a class="two" href="#">How it works</a>
+                <a class="three" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+  <body>
+    <div class="row under-header width100">
+      <div class="container-fluid align-self-center">
+        <div class="col-12 col-sm-12 h-100 padding40">
+          <p>
+            <span class="description1">There are <span class="boldtobe">15,459</span> red flagged tenders out of <span class="boldtobe">45,345</span></span><br>
+            <span class="description2">all information and tenders are from the public procurement system <span class="boldtobe">"eprokurorimi"</span>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <div class="row width100">
+        <div class="container-fluid margtop">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-3" align="center">
+          <span class="d-flex spaflex" style="margin: 0;">
+            <p class="filterat">Filterat</p>
+  <!-- Button to Open the Modal -->
+  <button  class="ruajfilterat btn kolor" type="button" data-toggle="modal" data-target="#myModal">
+    Ruaj Filterat
+  </button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Vendosni emailin tuaj</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn kolor" data-dismiss="modal">Ruaj</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+          </span>
+          <div class="base padd">
+            <span class="d-flex"><p class="tekstidata">Data</p><span class="span2">
+              <input class="inpt2 font12" size="7" type="text" value="  Prej" id="datepicker">
+              <span class="span3">
+                <input class="inpt2 font12" size="7" type="datetime" value="  Deri" id="datepicker2">
+              </span>
+            </span>
+          </div>
+          <div class="base padd">
+            <span class="d-flex">
+              <p class="tekstidata d-flex">Indikatorët</p>
+              <span class="span2">
+                <select class="selectwidth font12">
+                  <option value="1" disabled="">Zgjidh</option>
+                  <option value="2">Çmimi me i ulët nuk është fitues</option>
+                  <option value="3">Kompani në listë të zezë</option>
+                  <option value="4">Procedurë e negocuar</option>
+                  <option value="5">Kontrata nuk është publikuar</option>
+                  <option value="6">Tejkalimi i vlerës së parashikuar</option>
+                  <option value="7">Standarde të vendeve tjera</option>
+                  <option value="8">Vetëm një ofertë e përgjegjshme</option>
+                  <option value="9">Ndarja e kërkesave në disa tenderë</option>
+                </select>
+              </span>
+            </span>
+          </div>
+          <div class="base padd">
+            <span class="d-flex">
+              <p class="tekstidata d-flex">A. K.</p>
+              <span class="span4">
+                <select class="selectwidth2 font12">
+                  <option value="1">Ministria Sherbimeve X</option>
+                  <option value="2">Korporata per Energjy Y</option>
+                  <option value="3">Komuna e Kosoves</option>
+                </select>
+              </span>
+          </div>
+          <div class="base padd">
+            <span class="d-flex">
+              <p class="tekstidata d-flex">Vlera e Parash.</p>
+              <span class="span5">
+                <select class="selectwidth3 font12">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </span>
+          </div>
+          <div class="base2 padd">
+            <span class="d-flex">
+              <p class="tekstidata2 d-flex">Flamujt e kuq</p>
+              <span class="span6">
+                <input class="inpt font12 sosize" size="15" type="text" value="  Nr. i Flamujve të kuq" class="form_datetime" id="datepicker6">
+              </span>
+            </span>
+          </div>
+          <div class="base padd">
+            <span class="d-flex">
+              <p class="tekstidata d-flex">Fituesi</p>
+              <span class="span7">
+                <input class="inpt font12 sosize" size="16" type="text" value=""  placeholder="Zgjidh fituesin" class="form_datetime" id="datepicker7">
+              </span>
+            </span>
+          </div>
+            <div class="base padd backtrans">
+              <span class="d-flex wid77">
+                <a href="#" class="colorgray">Pastro filterat</a>
+              </span>
+                <button  class="btn kolor ruajfilterat2" type="button">Kërko</button>
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-9 col-lg-9" align="center">
+          <span class="d-flex"><p class="filterat">Të gjithë tenderët</p>
+          <span class="span1"><a href="#"><img src="img/share002.svg"></a></span></span>
+          <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0">
+              <thead>
+                  <tr>
+                      <th width="40" align="center"><img src="img/group20.svg"></th>
+                      <th>Titulli i tenderit</th>
+                      <th>Furnizuesi</th>
+                      <th>Blerësi</th>
+                      <th>Data e nënshkrimit</th>
+                      <th>Çmimi (€/TVSH)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><img src="img/group20.svg"> (1) </td>
+                      <td>“Furnizim me material për zyre për nevojat e Komunës Shtërpcë dhe shkollave ne teritorin e komunës Shtërpcë si dhe mjekësis familjare në teritorin e komunës Shtërpcë</td>
+                      <td>N.P.T.,,PRO MIX’’</td>
+                      <td>61</td>
+                      <td>2011/04/25</td>
+                      <td>$320,800</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (8)</td>
+                      <td>RI TENDERServisimi i Aparateve kundër zjarrit për Gjykaten Themelore Mitrovicë me degët e saj në Regjionin e Mitrovices</td>
+                      <td>“ 192.168.1.1. “ SH.P.K.</td>
+                      <td>63</td>
+                      <td>2011/07/25</td>
+                      <td>$170,750</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (8)</td>
+                      <td>"Furnizim me artikuj ushqimor për qerdhe,shtëpin e komunitetit,dita të shkollave dhe familje me nevojëRi tenderim</td>
+                      <td>D.P.Z.,,Besarti K.Z. Servis”</td>
+                      <td>66</td>
+                      <td>2009/01/12</td>
+                      <td>$86,000</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (4)</td>
+                      <td>Ndërtimi I tre rezervarëve të ujit për ujësjellsa ne fshatrat e KK Novobërdë Ndërtimi I tre rezervarëve të ujit për ujësjellsa ne fshatrat e KK Novo</td>
+                      <td>“GRYKA” SH.P.K.</td>
+                      <td>22</td>
+                      <td>2012/03/29</td>
+                      <td>$433,060</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (1)</td>
+                      <td>FURNIZIMI ME INVENTAR PËR NEVOJAT E QKMF-se</td>
+                      <td>N.N.SH: “Xhema Com”</td>
+                      <td>33</td>
+                      <td>2008/11/28</td>
+                      <td>$162,700</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (6)</td>
+                      <td>FURNIZIMI ME INVENTAR PËR NEVOJAT E QKMF-se</td>
+                      <td>N.P.SH. “ ELIONI.COM “</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (3)</td>
+                      <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
+                      <td>OFFICE 1 KOSOVA SH.P.K.</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (2)</td>
+                      <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
+                      <td>OFFICE 1 KOSOVA SH.P.K.</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (1)</td>
+                      <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
+                      <td>OFFICE 1 KOSOVA SH.P.K.</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (8)</td>
+                      <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
+                      <td>OFFICE 1 KOSOVA SH.P.K.</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg"> (7)</td>
+                      <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
+                      <td>OFFICE 1 KOSOVA SH.P.K.</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                  </tr>
+                  <tr>
+                      <td><img src="img/group20.svg">(7)</td>
+                      <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
+                      <td>OFFICE 1 KOSOVA SH.P.K.</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                  </tr>
+
+                  </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+        <!-- <div class="col-12 margtop" align="center">
+          <a href="#"><img src="img/icon_process.svg"></a><h6>Më shumë</h6>
+        </div> -->
+        <div class="row" style="margin: 0;">
+          <div class="container-fluid margtop" align="center">
+            <div class="col-sm-6 col-md-6 col-lg-3" align="center">
+              <div class="base4 d-flex">
+                  <div class="col-1"><span class="dot"><img class="imgpos" src="img/group20.svg"></span></div>
+                  <div class="col-11" style="margin-top: 15px;"><span class="totaltenders3">15,459</span><br><span class="totaltenders4">Totali i tenderëve me flamuj të kuq</span></div>
+              </div>
+              <div class="base7 margtop2">
+                <p class="top10">Top 10 autoritetet kontraktuese me më së shumti flamuj të kuq</p><hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">13</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">6</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">4</p><p class="undertank1">D.P.Z.,,Besarti K.Z. Servis”</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">3</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6" align="center">
+              <div class="base5">
+                <p class="userretention paddings">Rradhitja e tenderëve në bazë të numrit të flamujve të kuq</p>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-4 paddings">
+                    <p class="risk">Ndërtimi I tre rezervarëve të ujit për ujësjellsa ne fshatrat e KK Novobërdë Ndërtimi I tre rezervarëve të… ujit për ujësjellsa ne fshatrat e KK Novo</p>
+                    <p class="risk">2 “ Furnizim me artikuj ushqimor për qerdhe,shtëpin e komunitetit,dita të shkollave dhe familje me nevojëRi… tenderim</p>
+                    <p class="risk">2 “Furnizim me material administrativ dhe tonera të ndryshëm”</p>
+                    <p class="risk">FURNIZIMI ME INVENTAR PËR NEVOJAT E QKMF-se</p>
+                    <p class="risk">RI TENDERServisimi i Aparateve kundër zjarrit për Gjykaten Themelore Mitrovicë me degët e saj në… Regjionin e Mitrovices</p>
+                    <p class="risk">“Furnizim me material për zyre për nevojat e Komunës Shtërpcë dhe shkollave ne teritorin e komunës Shtë… dhe mjekësis familjare në teritorin e komunës Shtërpcë</p>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <div class="row zeroto7" style="width: 100%; padding-left: 35px;">0 <span style="padding-left: 52px;">10</span> <span style="padding-left: 44px;">20</span> <span style="padding-left: 46px;">30</span> <span style="padding-left: 44px;">40</span> <span style="padding-left: 50px;">50</span> <span style="padding-left: 44px;">60</span></div>
+                      <div class="row paddleft">
+                      <p class="rectangle margtop2"></p>
+                      <p class="rectangle2 margtop2"></p>
+                      <p class="rectangle3 margtop2"></p>
+                      <p class="rectangle4 margtop2"></p>
+                      <p class="rectangle5 margtop2"></p>
+                      <p class="rectangle6 margtop2"></p>
+                      <p class="rectangle7 margtop2"></p>
+                      </div>
+                      <div class="row paddleft">
+                      <p class="rectangle margtop2"></p>
+                      <p class="rectangle2 margtop2"></p>
+                      <p class="rectangle3 margtop2"></p>
+                      <p class="rectangle4 margtop2"></p>
+                      <p class="rectangle5 margtop2"></p>
+                      <p class="rectangle6 margtop2"></p>
+                      </div>
+                      <div class="row paddleft">
+                      <p class="rectangle margtop2"></p>
+                      <p class="rectangle2 margtop2"></p>
+                      <p class="rectangle3 margtop2"></p>
+                      <p class="rectangle4 margtop2"></p>
+                      <p class="rectangle5 margtop2"></p>
+                      </div>
+                      <div class="row paddleft">
+                      <p class="rectangle margtop2"></p>
+                      <p class="rectangle2 margtop2"></p>
+                      <p class="rectangle3 margtop2"></p>
+                      <p class="rectangle4 margtop2"></p>
+                      </div>
+                      <div class="row paddleft">
+                      <p class="rectangle margtop2"></p>
+                      <p class="rectangle2 margtop2"></p>
+                      <p class="rectangle3 margtop2"></p>
+                      </div>
+                      <div class="row paddleft">
+                      <p class="rectangle margtop2"></p>
+                      <p class="rectangle2 margtop2"></p>
+                      </div>
+                      <div class="row paddleft">
+                      <p class="rectangle margtop2"></p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3" align="center">
+                <div class="base6">
+              <p class="top10">Radhitja e indikatorëve në bazë të numrit të flamujve të kuq</p><hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">13</p><p class="undertank1">Mungesë konkurrence</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">6</p><p class="undertank1">Mungesë Gare, Negocim i Drejtpërdrejtë</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">4</p><p class="undertank1">Pamundësi kohore për përgatitje të një oferte</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">3</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+                  <hr class="stili90">
+                  <div class="row">
+                    <img src="img/icon.svg" class="ballon1">
+                    <p class="nrcolor2">12</p><p class="undertank1">N.P.T.,,PRO MIX’’</p>
+                  </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </span>
+      </div>
+      </span>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="row footer1 width100" style="margin-top: 40px;">
+      <div class="col-12 col-sm-12 col-md-3" align="center"><p class="copyright3">COPYRIGHT © 2019 / DPLUS</p></div>
+      <div class="col-12 col-sm-12 col-md-6" align="center"><p class="copyright1">PËRKRAHUR NGA: <img src="img/usaid.svg"></p></div>
+      <div class="col-12 col-sm-12 col-md-3" align="center"><p class="copyright2">PËR NE / KUFIZIMET E PORTALIT / ABONOHU</p></div>
+    </div>
+  </body>
+<footer>
+  <style type="text/css">
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    $('#burger.icon').click(function(){
+      if(!$('#myLinks').hasClass('opened')){
+        $('#myLinks').addClass('opened')
+         $('#myLinks').slideDown()
+      }
+      else{
+        $('#myLinks').removeClass('opened')
+        $('#myLinks').slideUp()
+      }
+    });
+    var $j = jQuery.noConflict();
+    $j("#datepicker").datepicker();
+    var $j = jQuery.noConflict();
+    $j("#datepicker2").datepicker();
+    // $(document).ready(function () {
+    //   $('#dtHorizontalExample').DataTable({
+    //   // "scrollX": true,
+    //   rowReorder: {
+    //         selector: 'td:nth-child(2)'
+    //     },
+    //     responsive: true
+    //   });
+    //   $('.dataTables_length').addClass('bs-select');
+    //   });
+    var table = $('#dtHorizontalExample').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        pageLength: 11,
+        lengthChange: false,
+        responsive: true
+    });
+    $('.searchbarsize').keyup(function(){
+      table.search($(this).val()).draw() ;
+    });
+});
+    </script>
+  </footer>
+</html>

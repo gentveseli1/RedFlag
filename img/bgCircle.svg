@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+    <defs>
+        <style>
+            .cls-1{fill:#afafaf}.cls-2{filter:url(#Bg_Circle)}
+        </style>
+        <filter id="Bg_Circle" width="160" height="160" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="20"/>
+            <feFlood flood-opacity=".122"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g class="cls-2">
+        <rect id="Bg_Circle-2" width="40" height="40" class="cls-1" data-name="Bg Circle" rx="20" transform="translate(60 60)"/>
+    </g>
+</svg>

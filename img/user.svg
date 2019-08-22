@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.757" height="13.986" viewBox="0 0 11.757 13.986">
+    <defs>
+        <style>
+            .cls-1{fill:#862a2c}
+        </style>
+    </defs>
+    <g id="User" transform="translate(-.034)">
+        <circle id="Oval" cx="3.243" cy="3.243" r="3.243" class="cls-1" transform="translate(2.669)"/>
+        <path id="Shape" d="M5.878 0A5.878 5.878 0 0 0 0 5.878h11.757A5.878 5.878 0 0 0 5.878 0z" class="cls-1" transform="translate(.034 8.108)"/>
+    </g>
+</svg>
