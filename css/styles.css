@@ -14,7 +14,7 @@ body {
 .padd2{padding: 0px; margin-top: 3px;}
 .paddl{padding: 0px; padding-right: 75px;}
 .paddleft{padding-left: 30px;}
-.margtop{margin-top: 25px;}
+.margtop{margin-top: 15px;}
 .margtop2{margin-top: 8px;}
 .description1{  object-fit: contain;
   font-size: 35px;
@@ -123,7 +123,7 @@ body {
   text-align: left;
   color: #ffffff;
   width: 33.33%}
-.spaflex{width: 320px; padding-left: 10px;}
+.spaflex{width: 220px; padding-left: 10px;}
 .about {
   object-fit: contain;
   font-family: 'Roboto', sans-serif;
@@ -146,11 +146,14 @@ body {
 .ruajfilterat{object-fit: contain;
   font-size: 14px;
   font-weight: bold;
+  width: 100px;
+  height: 40px!important;
+  margin-left: 30px;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.93;
+  line-height: 10px;
   letter-spacing: normal;
-  color: #7f7f7f; position:relative; left:44%; color: #84292b;border-radius: 4px;}
+  color: #7f7f7f; position: relative; color: #84292b;border-radius: 4px;}
   .ruajfilterat2{
   object-fit: contain;
   font-size: 14px;
@@ -334,7 +337,7 @@ body {
   color: #7f7f7f;
   position: relative;
   left: 20%;}
-.base4{width: 315px;
+.base4{width: 100%;
   height: 85px;
   border-radius: 10px;
   background-color: #84292b;}
@@ -523,6 +526,7 @@ body {
 .webkitx{text-align: -webkit-center;}
 .copyright3{object-fit: contain;
   font-size: 14px;
+  width: 100%;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -598,12 +602,12 @@ body {
   height: 100%;
   border-radius: 10px;
   background-color: #f4f4f4;}
-.base6{width: 374px;
+.base6{width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 10px;
   background-color: #f4f4f4;}
-.base7{width: 315px;
+.base7{width: 100%;
   height: 89%;
   object-fit: contain;
   border-radius: 10px;
@@ -692,11 +696,6 @@ body {
   div.rectangle7{
     margin-left: 0;
     margin-top: 8px;
-  }
-}
-@media only screen and (max-width: 1600px){
-  div.col-sm-12.col-md-9.col-lg-9{
-    width: 30em; overflow-x: auto; white-space: nowrap;
   }
 }
 @media only screen and (max-width: 700px){
@@ -817,12 +816,6 @@ a.three:hover:after {
   }
 
 }
-@media only screen and (max-width: 750px){
-  button.ruajfilterat.btn.kolor{
-    position: relative;
-    left: 59%;
-  }
-}
 @media only screen and (max-width: 560px){
   div.base4.d-flex{
     width: 100%;
@@ -871,30 +864,6 @@ a.three:hover:after {
   }
   span.d-flex.spaflex{
     padding-right: 50px;
-  }
-}
-@media only screen and (max-width: 400px){
-  div.topnav{
-    width: 115%;
-  }
-  div.row.under-header.width100{
-    width: 115%;
-  }
-}
-@media only screen and (min-width: 401px and max-width: 450px){
-  div.topnav{
-    width: 105%!important;
-  }
-  div.row.under-header.width100{
-    width: 115%;
-  }
-}
-@media only screen and (max-width: 325px){
-  div.topnav{
-    width: 128%;
-  }
-  div.row.under-header.width100{
-    width: 128%;
   }
 }
 @media only screen and (max-width: 420px){
@@ -1007,6 +976,8 @@ div.topnav {
 
 .dataTables_wrapper .dataTables_filter {
 display: none !important;
+table-layout: fixed !important;
+word-wrap:break-word;
 }
 
 .dataTables_wrapper th { font-size: 13px; }
@@ -1047,3 +1018,4 @@ div.ms-parent{width: 185px!important; margin-top: 24px; margin-right: 10px; font
     text-decoration: none;
     border-radius: 4px;
     background-color: #fff;}
+.txtalign{text-align: center;}

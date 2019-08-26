@@ -22,10 +22,9 @@
       <a href="#home" class="redflag">Red Flags</a>
       <div id="myLinks">
         <form class="form-group"><input type="text" class="form-control searchbarsize" placeholder="Search"></form>
-        <a href="#news">Features</a>
-        <a href="#contact">How it works</a>
-        <a href="#about">Contact</a>
-        <!-- <a href="#profile"><img class="imgprofile" src="img/bgCircle.svg"></a> -->
+        <a href="#news" class="txtalign">Features</a>
+        <a href="#contact" class="txtalign">How it works</a>
+        <a href="#about" class="txtalign">Contact</a>
       </div>
       <a href="javascript:void(0);" class="icon" id="burger">
         <i class="fa fa-bars"></i>
@@ -62,38 +61,43 @@
 
       <div class="row width100">
         <div class="container-fluid margtop">
-        <div class="col-12 col-sm-12 col-md-9 col-lg-3" align="center">
-          <span class="d-flex spaflex" style="margin: 0;">
-            <p class="filterat">Filterat</p>
-  <!-- Button to Open the Modal -->
-  <button  class="ruajfilterat btn kolor" type="button" data-toggle="modal" data-target="#myModal">
-    Ruaj Filterat
-  </button>
+          <span class="d-flex spaflex" style="margin: 0; width: 100%; justify-content: center;">
+  <button  class="ruajfilterat btn kolor" type="button" data-toggle="modal" data-target="#myModal" style="background-color: transparent; color: black; font-size: 18px; font-weight: normal;">
+    <i class="fa fa-cog"></i>
+    Filterat
+  </button></span></div>
   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
-
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Vendosni emailin tuaj</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-        <!-- Modal body -->
         <div class="modal-body">
-          <input type="email" id="email" pattern=".+@globex.com" size="30" required>
-        </div>
+         <div class="hiddenfilters" align="center">
+          <button  class="ruajfilterat btn kolor" type="button" data-toggle="modal" data-target="#myModal1">
+            Ruaj Filterat
+          </button>
+            <div class="modal" id="myModal1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
 
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn kolor" data-dismiss="modal">Ruaj</button>
-        </div>
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Vendosni emailin tuaj</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
 
-      </div>
-    </div>
-  </div>
-          </span>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn kolor" data-dismiss="modal">Ruaj</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
           <div class="base padd">
             <span class="d-flex" style="justify-content: space-between;"><p class="tekstidata">Data</p><span class="span2">
               <input class="inpt2 font12" size="7" type="text" value="  Prej" id="datepicker">
@@ -157,7 +161,6 @@
                 <select class="fituesi">
                   <option value="1">Ministria Sherbimeve X</option>
                 </select>
-                <!-- <input class="inpt font12 sosize" size="16" type="text" value=""  placeholder="Zgjidh fituesin" class="form_datetime" id="datepicker7"> -->
             </span>
           </div>
             <div class="base padd backtrans">
@@ -168,18 +171,23 @@
               </span>
             </div>
           </div>
-          <div class="col-sm-12 col-md-9 col-lg-9" align="center">
-          <span class="d-flex" style="justify-content: space-between;"><p class="filterat">Të gjithë tenderët</p>
-          <span class="span1"><a href="#"><img src="img/share002.svg"></a></span></span>
-          <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0" style="height: 550px;">
+        </div>
+
+        </div>
+      </div>
+    </div>
+        <br style="clear: both;">
+        <div class="container-fluid">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12" align="center" style="padding: 0 19px 0 40px;">
+      <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0" style="margin-top: 15px;">
               <thead>
                   <tr>
                       <th width="5%" align="center"><img src="img/group20.svg"></th>
-                      <th style="width: 50%;">Titulli i tenderit</th>
-                      <th>Furnizuesi</th>
-                      <th>Blerësi</th>
-                      <th>Data e nënshkrimit</th>
-                      <th>Çmimi (€/TVSH)</th>
+                      <th width="50%">Titulli i tenderit</th>
+                      <th width="10%">Furnizuesi</th>
+                      <th width="5%">Blerësi</th>
+                      <th width="10%">Dt. e nënshkrimit</th>
+                      <th width="20%">Çmimi (€/TVSH)</th>
                   </tr>
               </thead>
               <tbody>
@@ -285,12 +293,10 @@
           </div>
         </div>
       </div>
-        <!-- <div class="col-12 margtop" align="center">
-          <a href="#"><img src="img/icon_process.svg"></a><h6>Më shumë</h6>
-        </div> -->
+      </div>
         <div class="row" style="margin: 0;">
-          <div class="container-fluid margtop" align="center">
-            <div class="col-sm-6 col-md-6 col-lg-3" align="center">
+          <div class="container-fluid margtop" align="center" style="padding-left: 1.7%;">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3" align="center" style="max-width: 100%;">
               <div class="base4 d-flex">
                   <div class="col-1"><span class="dot"><img class="imgpos" src="img/group20.svg"></span></div>
                   <div class="col-11" style="margin-top: 15px;"><span class="totaltenders3">15,459</span><br><span class="totaltenders4">Totali i tenderëve me flamuj të kuq</span></div>
@@ -408,7 +414,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-3" align="center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3" align="center" style="max-width: 100%;">
                 <div class="base6">
               <p class="top10">Radhitja e indikatorëve në bazë të numrit të flamujve të kuq</p><hr class="stili90">
                   <div class="row">
@@ -473,7 +479,7 @@
     </div>
   </div>
 </div>
-    <div class="row footer1 width100" style="margin-top: 40px;">
+    <div class="row footer1 width100" style="margin-top: 40px; max-width: 100%;">
       <div class="col-12 col-sm-12 col-md-3" align="center"><p class="copyright3">COPYRIGHT © 2019 / DPLUS</p></div>
       <div class="col-12 col-sm-12 col-md-6" align="center"><p class="copyright1">PËRKRAHUR NGA: <img src="img/usaid.svg"></p></div>
       <div class="col-12 col-sm-12 col-md-3" align="center"><p class="copyright2">PËR NE / KUFIZIMET E PORTALIT / ABONOHU</p></div>
@@ -520,13 +526,14 @@
     //   });
     //   $('.dataTables_length').addClass('bs-select');
     //   });
+
     var table = $('#dtHorizontalExample').DataTable( {
         rowReorder: {
             selector: 'td:nth-child(2)'
         },
-        pageLength: 11,
+        pageLength: 10,
+        responsive: true,
         lengthChange: false,
-        responsive: true
     });
     $('.searchbarsize').keyup(function(){
       table.search($(this).val()).draw() ;
