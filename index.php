@@ -171,11 +171,11 @@
           <div class="col-sm-12 col-md-9 col-lg-9" align="center">
           <span class="d-flex" style="justify-content: space-between;"><p class="filterat">Të gjithë tenderët</p>
           <span class="span1"><a href="#"><img src="img/share002.svg"></a></span></span>
-          <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0">
+          <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0" style="height: 550px;">
               <thead>
                   <tr>
-                      <th width="40" align="center"><img src="img/group20.svg"></th>
-                      <th>Titulli i tenderit</th>
+                      <th width="5%" align="center"><img src="img/group20.svg"></th>
+                      <th style="width: 50%;">Titulli i tenderit</th>
                       <th>Furnizuesi</th>
                       <th>Blerësi</th>
                       <th>Data e nënshkrimit</th>
