@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js">
   <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet" /> -->
+  <link href="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.css" rel="stylesheet">
   <title>Red Flags</title>
 </head>
     <div class="topnav">
@@ -93,7 +95,7 @@
   </div>
           </span>
           <div class="base padd">
-            <span class="d-flex"><p class="tekstidata">Data</p><span class="span2">
+            <span class="d-flex" style="justify-content: space-between;"><p class="tekstidata">Data</p><span class="span2">
               <input class="inpt2 font12" size="7" type="text" value="  Prej" id="datepicker">
               <span class="span3">
                 <input class="inpt2 font12" size="7" type="datetime" value="  Deri" id="datepicker2">
@@ -101,59 +103,61 @@
             </span>
           </div>
           <div class="base padd">
-            <span class="d-flex">
+            <span class="d-flex" style="justify-content: space-between;">
               <p class="tekstidata d-flex">Indikatorët</p>
-              <span class="span2">
-                <select class="selectwidth font12">
-                  <option value="1" disabled="">Zgjidh</option>
-                  <option value="2">Çmimi me i ulët nuk është fitues</option>
-                  <option value="3">Kompani në listë të zezë</option>
-                  <option value="4">Procedurë e negocuar</option>
-                  <option value="5">Kontrata nuk është publikuar</option>
-                  <option value="6">Tejkalimi i vlerës së parashikuar</option>
-                  <option value="7">Standarde të vendeve tjera</option>
-                  <option value="8">Vetëm një ofertë e përgjegjshme</option>
-                  <option value="9">Ndarja e kërkesave në disa tenderë</option>
-                </select>
-              </span>
+             <!--  <select class="js-example-basic-multiple" name="states[]" multiple="multiple"> -->
+              <select multiple="multiple" class="indikatoret" placeholder="Zgjedhe 1 ose me shume indikatore">
+                  <option value="1">Çmimi me i ulët nuk është fitues</option>
+                  <option value="2">Kompani në listë të zezë</option>
+                  <option value="3">Procedurë e negocuar</option>
+                  <option value="4">Kontrata nuk është publikuar</option>
+                  <option value="5">Tejkalimi i vlerës së parashikuar</option>
+                  <option value="6">Standarde të vendeve tjera</option>
+                  <option value="7">Vetëm një ofertë e përgjegjshme</option>
+                  <option value="8">Ndarja e kërkesave në disa tenderë</option>
+              </select>
             </span>
           </div>
           <div class="base padd">
-            <span class="d-flex">
+            <span class="d-flex"  style="justify-content: space-between;">
               <p class="tekstidata d-flex">A. K.</p>
-              <span class="span4">
-                <select class="selectwidth2 font12">
+                <select class="akontraktuese">
                   <option value="1">Ministria Sherbimeve X</option>
                   <option value="2">Korporata per Energjy Y</option>
                   <option value="3">Komuna e Kosoves</option>
                 </select>
-              </span>
           </div>
           <div class="base padd">
-            <span class="d-flex">
-              <p class="tekstidata d-flex">Vlera e Parash.</p>
-              <span class="span5">
-                <select class="selectwidth3 font12">
+            <span class="d-flex" style="justify-content: space-between;">
+              <p class="tekstidata d-flex">Vlera</p>
+                <span style="display: flex;">
+                  <input class="inputnr" type="number" name="quantity" min="1" max="9999999">
+                  <input class="inputnr" type="number" name="quantity" min="1" max="9999999">
+                </span>
+            </span>
+          </div>
+          <div class="base2 padd">
+            <span class="d-flex" style="justify-content: space-between;">
+              <p class="tekstidata2 d-flex">Flamujt e kuq</p>
+                <select class="flamujtekuq">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
                 </select>
-              </span>
-          </div>
-          <div class="base2 padd">
-            <span class="d-flex">
-              <p class="tekstidata2 d-flex">Flamujt e kuq</p>
-              <span class="span6">
-                <input class="inpt font12 sosize" size="15" type="text" value="  Nr. i Flamujve të kuq" class="form_datetime" id="datepicker6">
-              </span>
             </span>
           </div>
           <div class="base padd">
-            <span class="d-flex">
+            <span class="d-flex" style="justify-content: space-between;">
               <p class="tekstidata d-flex">Fituesi</p>
-              <span class="span7">
-                <input class="inpt font12 sosize" size="16" type="text" value=""  placeholder="Zgjidh fituesin" class="form_datetime" id="datepicker7">
-              </span>
+                <select class="fituesi">
+                  <option value="1">Ministria Sherbimeve X</option>
+                </select>
+                <!-- <input class="inpt font12 sosize" size="16" type="text" value=""  placeholder="Zgjidh fituesin" class="form_datetime" id="datepicker7"> -->
             </span>
           </div>
             <div class="base padd backtrans">
@@ -165,7 +169,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-9 col-lg-9" align="center">
-          <span class="d-flex"><p class="filterat">Të gjithë tenderët</p>
+          <span class="d-flex" style="justify-content: space-between;"><p class="filterat">Të gjithë tenderët</p>
           <span class="span1"><a href="#"><img src="img/share002.svg"></a></span></span>
           <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0">
               <thead>
@@ -479,7 +483,10 @@
   <style type="text/css">
 
   </style>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
@@ -524,6 +531,35 @@
     $('.searchbarsize').keyup(function(){
       table.search($(this).val()).draw() ;
     });
+    // $(document).ready(function(){
+    //   $('.js-example-basic-multiple').select2();
+    // });
+    function formatState (state) {
+  if (!state.id) {
+    return state.text;
+  }
+  var baseUrl = "/user/pages/images/flags";
+  var $state = $(
+    '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
+  );
+  return $state;
+};
+
+  // $(".js-example-templating").select2({
+  //   templateResult: formatState
+  // });
+  // $(document).ready(function() {
+  //     $('.js-example-basic-single').select2();
+  // });
+    $('.indikatoret').multipleSelect()
+    $('.akontraktuese').multipleSelect({
+     filter: true,
+     single: true
+   })
+    $('.fituesi').multipleSelect({
+     filter: true,
+     single: true
+   })
 });
     </script>
   </footer>
