@@ -1039,3 +1039,11 @@ div.ms-parent{width: 185px!important; margin-top: 24px; margin-right: 10px; font
 .mwidth{max-width: 100%;}
 .mwidth2{margin-top: 40px; max-width: 100%;}
 .fa .fa-bars{color: #973d3b;}
+a#dtHorizontalExample_previous.button.primary_button.previous.disabled{color: black!important; text-decoration: none;}
+a.button.primary_button.current{color: black!important; text-decoration: none;}
+a#dtHorizontalExample_next.button.primary_button.next.disabled{color: black!important; text-decoration: none;}
+a#dtHorizontalExample_next.button.primary_button.next{color: black!important}
+a#dtHorizontalExample_previous.button.primary_button.previous{color: black!important}
+a.button.primary_button{color: black!important}
+div#dtHorizontalExample_paginate.dataTables_paginate.paging_simple_numbers > a#dtHorizontalExample_previous.button.primary_button.previous {margin-right: 10px}
+div#dtHorizontalExample_paginate.dataTables_paginate.paging_simple_numbers > span {margin-right: 10px}

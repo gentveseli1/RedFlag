@@ -513,7 +513,7 @@
     $j("#datepicker").datepicker();
     var $j = jQuery.noConflict();
     $j("#datepicker2").datepicker();
-
+    $.fn.dataTable.ext.classes.sPageButton = 'button primary_button';
     var table = $('#dtHorizontalExample').DataTable( {
         rowReorder: {
             selector: 'td:nth-child(2)'
