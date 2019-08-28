@@ -33,7 +33,7 @@
         <div class="row top-header width100">
           <div class="container-fluid d-flex">
             <div class="col-lg-3 d-flex align-self-center padding40">
-              <img src="img/flag003.svg">
+              <img src="img/whiteflag.svg">
                 <p class="redflag">Red Flags</p>
             </div>
             <div class="col-lg-6 d-flex justify-content-center align-self-center" align="center">
@@ -61,28 +61,20 @@
 
       <div class="row width100">
         <div class="container-fluid margtop">
-          <span class="d-flex spaflex" style="margin: 0; width: 100%; justify-content: center;">
-  <button  class="ruajfilterat btn kolor" type="button" data-toggle="modal" data-target="#myModal" style="background-color: transparent; color: black; font-size: 18px; font-weight: normal;">
+          <span class="d-flex spaflex wt">
+  <button  class="ruajfilterat btn kolor wt1" type="button" data-toggle="modal" data-target="#myModal">
     <i class="fa fa-cog"></i>
     Filterat
   </button></span></div>
   <!-- The Modal -->
-  <div class="modal" id="myModal">
+  <div class="modal" id="myModal" align="center">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-         <div class="hiddenfilters" align="center">
-          <button  class="ruajfilterat btn kolor" type="button" data-toggle="modal" data-target="#myModal1">
-            Ruaj Filterat
-          </button>
-            <div class="modal" id="myModal1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
+    	<div class="modal-content modal-one">
 
                     <!-- Modal Header -->
                     <div class="modal-header">
                       <h4 class="modal-title">Vendosni emailin tuaj</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <button type="button" class="close modal-one-x">&times;</button>
                     </div>
 
                     <!-- Modal body -->
@@ -92,14 +84,19 @@
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                      <button type="button" class="btn kolor" data-dismiss="modal">Ruaj</button>
+                      <button type="button" class="btn kolor">Ruaj</button>
                     </div>
 
                   </div>
-                </div>
-              </div>
-          <div class="base padd">
-            <span class="d-flex" style="justify-content: space-between;"><p class="tekstidata">Data</p><span class="span2">
+      <div class="modal-content wt2">
+        <div class="modal-body">
+         <div class="hiddenfilters" align="center">
+          <button  class="ruajfilterat magicBtn btn kolor" type="button">
+            Ruaj Filterat
+          </button>
+      
+		  <div class="base padd">
+            <span class="d-flex jcsb"><p class="tekstidata">Data</p><span class="span2">
               <input class="inpt2 font12" size="7" type="text" value="  Prej" id="datepicker">
               <span class="span3">
                 <input class="inpt2 font12" size="7" type="datetime" value="  Deri" id="datepicker2">
@@ -107,7 +104,7 @@
             </span>
           </div>
           <div class="base padd">
-            <span class="d-flex" style="justify-content: space-between;">
+            <span class="d-flex jcsb">
               <p class="tekstidata d-flex">Indikatorët</p>
              <!--  <select class="js-example-basic-multiple" name="states[]" multiple="multiple"> -->
               <select multiple="multiple" class="indikatoret" placeholder="Zgjedhe 1 ose me shume indikatore">
@@ -123,7 +120,7 @@
             </span>
           </div>
           <div class="base padd">
-            <span class="d-flex"  style="justify-content: space-between;">
+            <span class="d-flex jcsb">
               <p class="tekstidata d-flex">A. K.</p>
                 <select class="akontraktuese">
                   <option value="1">Ministria Sherbimeve X</option>
@@ -132,16 +129,16 @@
                 </select>
           </div>
           <div class="base padd">
-            <span class="d-flex" style="justify-content: space-between;">
+            <span class="d-flex jcsb">
               <p class="tekstidata d-flex">Vlera</p>
-                <span style="display: flex;">
+                <span class="d-flex">
                   <input class="inputnr" type="number" name="quantity" min="1" max="9999999">
                   <input class="inputnr" type="number" name="quantity" min="1" max="9999999">
                 </span>
             </span>
           </div>
           <div class="base2 padd">
-            <span class="d-flex" style="justify-content: space-between;">
+            <span class="d-flex jcsb">
               <p class="tekstidata2 d-flex">Flamujt e kuq</p>
                 <select class="flamujtekuq">
                   <option value="1">1</option>
@@ -156,7 +153,7 @@
             </span>
           </div>
           <div class="base padd">
-            <span class="d-flex" style="justify-content: space-between;">
+            <span class="d-flex jcsb">
               <p class="tekstidata d-flex">Fituesi</p>
                 <select class="fituesi">
                   <option value="1">Ministria Sherbimeve X</option>
@@ -178,16 +175,16 @@
     </div>
         <br style="clear: both;">
         <div class="container-fluid">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12" align="center" style="padding: 0 19px 0 40px;">
-      <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0" style="margin-top: 15px;">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 magicpad margtop" align="center">
+      <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm magrtop" cellspacing="0">
               <thead>
                   <tr>
                       <th width="5%" align="center"><img src="img/group20.svg"></th>
-                      <th width="50%">Titulli i tenderit</th>
-                      <th width="10%">Furnizuesi</th>
-                      <th width="5%">Blerësi</th>
+                      <th width="45%">Titulli i tenderit</th>
+                      <th width="15%">Furnizuesi</th>
+                      <th width="15%">Blerësi</th>
                       <th width="10%">Dt. e nënshkrimit</th>
-                      <th width="20%">Çmimi (€/TVSH)</th>
+                      <th width="10%">Çmimi (€/TVSH)</th>
                   </tr>
               </thead>
               <tbody>
@@ -195,7 +192,7 @@
                       <td><img src="img/group20.svg"> (1) </td>
                       <td>“Furnizim me material për zyre për nevojat e Komunës Shtërpcë dhe shkollave ne teritorin e komunës Shtërpcë si dhe mjekësis familjare në teritorin e komunës Shtërpcë</td>
                       <td>N.P.T.,,PRO MIX’’</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2011/04/25</td>
                       <td>$320,800</td>
                   </tr>
@@ -203,7 +200,7 @@
                       <td><img src="img/group20.svg"> (8)</td>
                       <td>RI TENDERServisimi i Aparateve kundër zjarrit për Gjykaten Themelore Mitrovicë me degët e saj në Regjionin e Mitrovices</td>
                       <td>“ 192.168.1.1. “ SH.P.K.</td>
-                      <td>63</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2011/07/25</td>
                       <td>$170,750</td>
                   </tr>
@@ -211,7 +208,7 @@
                       <td><img src="img/group20.svg"> (8)</td>
                       <td>"Furnizim me artikuj ushqimor për qerdhe,shtëpin e komunitetit,dita të shkollave dhe familje me nevojëRi tenderim</td>
                       <td>D.P.Z.,,Besarti K.Z. Servis”</td>
-                      <td>66</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2009/01/12</td>
                       <td>$86,000</td>
                   </tr>
@@ -219,7 +216,7 @@
                       <td><img src="img/group20.svg"> (4)</td>
                       <td>Ndërtimi I tre rezervarëve të ujit për ujësjellsa ne fshatrat e KK Novobërdë Ndërtimi I tre rezervarëve të ujit për ujësjellsa ne fshatrat e KK Novo</td>
                       <td>“GRYKA” SH.P.K.</td>
-                      <td>22</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/03/29</td>
                       <td>$433,060</td>
                   </tr>
@@ -227,7 +224,7 @@
                       <td><img src="img/group20.svg"> (1)</td>
                       <td>FURNIZIMI ME INVENTAR PËR NEVOJAT E QKMF-se</td>
                       <td>N.N.SH: “Xhema Com”</td>
-                      <td>33</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2008/11/28</td>
                       <td>$162,700</td>
                   </tr>
@@ -235,7 +232,7 @@
                       <td><img src="img/group20.svg"> (6)</td>
                       <td>FURNIZIMI ME INVENTAR PËR NEVOJAT E QKMF-se</td>
                       <td>N.P.SH. “ ELIONI.COM “</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/12/02</td>
                       <td>$372,000</td>
                   </tr>
@@ -243,7 +240,7 @@
                       <td><img src="img/group20.svg"> (3)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/12/02</td>
                       <td>$372,000</td>
                   </tr>
@@ -251,7 +248,7 @@
                       <td><img src="img/group20.svg"> (2)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/12/02</td>
                       <td>$372,000</td>
                   </tr>
@@ -259,7 +256,7 @@
                       <td><img src="img/group20.svg"> (1)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/12/02</td>
                       <td>$372,000</td>
                   </tr>
@@ -267,7 +264,7 @@
                       <td><img src="img/group20.svg"> (8)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/12/02</td>
                       <td>$372,000</td>
                   </tr>
@@ -275,7 +272,7 @@
                       <td><img src="img/group20.svg"> (7)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/12/02</td>
                       <td>$372,000</td>
                   </tr>
@@ -283,7 +280,7 @@
                       <td><img src="img/group20.svg">(7)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
-                      <td>61</td>
+                      <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2012/12/02</td>
                       <td>$372,000</td>
                   </tr>
@@ -294,12 +291,12 @@
         </div>
       </div>
       </div>
-        <div class="row" style="margin: 0;">
-          <div class="container-fluid margtop" align="center" style="padding-left: 1.7%;">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-3" align="center" style="max-width: 100%;">
+        <div class="row rowmarg0">
+          <div class="container-fluid margtop magicpadl" align="center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 mwidth" align="center">
               <div class="base4 d-flex">
                   <div class="col-1"><span class="dot"><img class="imgpos" src="img/group20.svg"></span></div>
-                  <div class="col-11" style="margin-top: 15px;"><span class="totaltenders3">15,459</span><br><span class="totaltenders4">Totali i tenderëve me flamuj të kuq</span></div>
+                  <div class="col-11 margtop"><span class="totaltenders3">15,459</span><br><span class="totaltenders4">Totali i tenderëve me flamuj të kuq</span></div>
               </div>
               <div class="base7 margtop2">
                 <p class="top10">Top 10 autoritetet kontraktuese me më së shumti flamuj të kuq</p><hr class="stili90">
@@ -414,7 +411,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-3" align="center" style="max-width: 100%;">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 mwidth" align="center">
                 <div class="base6">
               <p class="top10">Radhitja e indikatorëve në bazë të numrit të flamujve të kuq</p><hr class="stili90">
                   <div class="row">
@@ -479,7 +476,7 @@
     </div>
   </div>
 </div>
-    <div class="row footer1 width100" style="margin-top: 40px; max-width: 100%;">
+    <div class="row footer1 width100 mwidth2">
       <div class="col-12 col-sm-12 col-md-3" align="center"><p class="copyright3">COPYRIGHT © 2019 / DPLUS</p></div>
       <div class="col-12 col-sm-12 col-md-6" align="center"><p class="copyright1">PËRKRAHUR NGA: <img src="img/usaid.svg"></p></div>
       <div class="col-12 col-sm-12 col-md-3" align="center"><p class="copyright2">PËR NE / KUFIZIMET E PORTALIT / ABONOHU</p></div>
@@ -516,16 +513,6 @@
     $j("#datepicker").datepicker();
     var $j = jQuery.noConflict();
     $j("#datepicker2").datepicker();
-    // $(document).ready(function () {
-    //   $('#dtHorizontalExample').DataTable({
-    //   // "scrollX": true,
-    //   rowReorder: {
-    //         selector: 'td:nth-child(2)'
-    //     },
-    //     responsive: true
-    //   });
-    //   $('.dataTables_length').addClass('bs-select');
-    //   });
 
     var table = $('#dtHorizontalExample').DataTable( {
         rowReorder: {
@@ -568,6 +555,13 @@
      single: true
    })
 });
+
+  $('.magicBtn').click(function(){
+  	$('.modal-one').css('display','block')
+  })
+   $('.modal-one-x').click(function(){
+  	$('.modal-one').css('display','none')
+  })
     </script>
   </footer>
 </html>
