@@ -98,7 +98,7 @@ body {
   line-height: 1.36;
   letter-spacing: normal;
   text-align: center;
-  color: #e21b1b;position:relative;left: 12px;top: 7px;}
+  color: #e21b1b;position:relative;left: 25px;top: 7px;}
 .nrcolor2{width: 16px;
   height: 19px;
   object-fit: contain;
@@ -958,7 +958,7 @@ div.topnav {
 @media only screen and (min-width: 570px){
   p.nrcolor2{
     position: relative;
-    left: 16px;
+    left: 24px;
   }
 }
 @media only screen and (max-width: 500px){
