@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css?v=<?php echo uniqid();?>" type="text/css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.5/js/dataTables.rowReorder.min.js">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
+<!--   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.5/js/dataTables.rowReorder.min.js"> -->
+
   <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet" /> -->
@@ -176,7 +178,7 @@
         <br style="clear: both;">
         <div class="container-fluid">
           <div class="col-12 col-sm-12 col-md-12 col-lg-12 magicpad margtop" align="center">
-      <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm magrtop" cellspacing="0">
+            <table id="dataShownTable" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
               <thead>
                   <tr>
                       <th width="5%" align="center"><img src="img/group20.svg"></th>
@@ -492,7 +494,12 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+   <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
+
+  <!-- <script type="text/javascript" language="javascript" href="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
 
 
@@ -513,8 +520,8 @@
     $j("#datepicker").datepicker();
     var $j = jQuery.noConflict();
     $j("#datepicker2").datepicker();
-    $.fn.dataTable.ext.classes.sPageButton = 'button primary_button';
-    var table = $('#dtHorizontalExample').DataTable( {
+    // $.fn.DataTable.ext.classes.sPageButton = 'button primary_button';
+    var table1 = $('#dtHorizontalExample').DataTable( {
         rowReorder: {
             selector: 'td:nth-child(2)'
         },
@@ -522,12 +529,28 @@
         responsive: true,
         lengthChange: false,
     });
+    
+    var table = $('#dataShownTable').DataTable( {
+      responsive: true,
+      bLengthChange: false,
+      bInfo: false,
+        columnDefs: [
+            {
+               rowReorder: {
+                  selector: 'td:nth-child(2)'
+              },
+                targets: [ 0, 1, 2 ],
+                className: 'mdl-data-table__cell--non-numeric',
+                lengthChange: false,
+                pageLength: 10,
+
+            }
+        ]
+    } );
     $('.searchbarsize').keyup(function(){
       table.search($(this).val()).draw() ;
     });
-    // $(document).ready(function(){
-    //   $('.js-example-basic-multiple').select2();
-    // });
+
     function formatState (state) {
   if (!state.id) {
     return state.text;
@@ -538,13 +561,6 @@
   );
   return $state;
 };
-
-  // $(".js-example-templating").select2({
-  //   templateResult: formatState
-  // });
-  // $(document).ready(function() {
-  //     $('.js-example-basic-single').select2();
-  // });
     $('.indikatoret').multipleSelect()
     $('.akontraktuese').multipleSelect({
      filter: true,

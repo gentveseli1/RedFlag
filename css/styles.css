@@ -9,7 +9,7 @@ body {
 .posit1{position: relative; top: 28%;}
 .under-header{background: linear-gradient(270deg,#a73c42 0,#541e21); height: 181px!important;}
 .footer1{background-color: #f4f4f4; height: 180px!important;}
-.container-fluid{width: 1600px;}
+
 .padd{padding: 0px; padding-left: 20px; margin-top: 20px;}
 .padd2{padding: 0px; margin-top: 3px;}
 .paddl{padding: 0px; padding-right: 75px;}
@@ -1014,10 +1014,11 @@ div.ms-parent{width: 185px!important; margin-top: 24px; margin-right: 10px; font
     border-radius: 4px;
     background-color: #fff;}
 .txtalign{text-align: center;}
+#example{white-space: normal!important;}
 .modal-open .modal{overflow-y: hidden;}
 @media only screen and (max-width: 685px){
-  #dtHorizontalExample_wrapper{
-    width: 24em;
+  div#example_wrapper.dataTables_wrapper.no-footer{
+  
     float: left;
     overflow-x: auto;
   }
@@ -1033,17 +1034,15 @@ div.ms-parent{width: 185px!important; margin-top: 24px; margin-right: 10px; font
 .wt1{background-color: transparent; color: white; font-size: 18px; font-weight: normal;}
 .wt2{height: 735px!important; width: 375px!important;}
 .jcsb{justify-content: space-between}
-.magicpad{padding: 0 19px 0 40px;}
+/*.magicpad{padding: 0 19px 0 40px;}*/
 .rowmarg0{margin: 0;}
 .magicpadl{padding-left: 1.7%;}
 .mwidth{max-width: 100%;}
 .mwidth2{margin-top: 40px; max-width: 100%;}
 .fa .fa-bars{color: #973d3b;}
-a#dtHorizontalExample_previous.button.primary_button.previous.disabled{color: black!important; text-decoration: none;}
-a.button.primary_button.current{color: black!important; text-decoration: none;}
-a#dtHorizontalExample_next.button.primary_button.next.disabled{color: black!important; text-decoration: none;}
-a#dtHorizontalExample_next.button.primary_button.next{color: black!important}
-a#dtHorizontalExample_previous.button.primary_button.previous{color: black!important}
-a.button.primary_button{color: black!important}
-div#dtHorizontalExample_paginate.dataTables_paginate.paging_simple_numbers > a#dtHorizontalExample_previous.button.primary_button.previous {margin-right: 10px}
-div#dtHorizontalExample_paginate.dataTables_paginate.paging_simple_numbers > span {margin-right: 10px}
+.page-item.active .page-link{
+  z-index: 1;
+  color: #ffff;
+  background: linear-gradient(270deg,#a73c42 0,#541e21);
+  border-color: #ffff;
+}
