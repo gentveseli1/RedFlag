@@ -27,7 +27,6 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <ul class="box-area m-0 p-0">
 
         <div class="row top-header" style="z-index: 2000;">
           <div class="container d-flex">
@@ -56,15 +55,6 @@
           </p>
         </div>
       </div>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       
     </div>
 
