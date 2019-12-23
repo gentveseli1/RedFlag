@@ -7,7 +7,7 @@ body {
 .top-header{background-color: #ffff; height: 75px; }
 .posit{position: relative; top: 33%;}
 .posit1{position: relative; top: 28%;}
-.under-header{background: linear-gradient(270deg,#a73c42 0,#541e21); height: 181px!important;}
+.under-header{background-color: #992d33; height: 181px!important;}
 .footer1{background-color: #f4f4f4;}
 
 .padd{padding: 0px; padding-left: 20px; margin-top: 20px;}
@@ -350,7 +350,7 @@ body {
 .base4{width: 100%;
   height: 85px;
   border-radius: 10px;
-  background: linear-gradient(270deg,#a73c42 0,#541e21);}
+  background-color: #992d33;}
 .bg{width: 862.7px;
   height: 454.5px;
   border-radius: 10px;
@@ -376,6 +376,8 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: #4d4f5c;
+  height: 75px;
+  border-radius: 10px;
   }
 .dot{height: 35px;
   width: 35px;
@@ -1030,7 +1032,7 @@ margin-top: 5%;
   height: 100vh;
   font-family: "Exo", sans-serif;
   color: #fff;
-  background: linear-gradient(-45deg, #aa482a, #992d33,#922f2f, #be2f32, #471a1c , #ad5a15);
+  background-color: #992d33;
   background-size: 400% 400%;
   animation: gradientBG 10s ease infinite;
 }
@@ -1052,7 +1054,7 @@ margin-top: 5%;
   width: 100%;
   font-family: "Exo", sans-serif;
   color: #fff;
-  background: linear-gradient(-45deg, #aa482a, #992d33,#922f2f, #be2f32, #471a1c , #ad5a15);
+  background-color: #992d33;
   background-size: 400% 400%;
   animation: gradientBG 10s ease infinite;
 }
@@ -1166,7 +1168,7 @@ margin: 0;
 width: 100%;
 font-family: "Exo", sans-serif;
 color: #fff;
-background: linear-gradient(-45deg, #aa482a, #992d33,#922f2f, #be2f32, #471a1c , #ad5a15);
+background-color: #992d33;
 background-size: 400% 400%;
 animation: gradientBG 10s ease infinite;
 }
@@ -1299,7 +1301,7 @@ ul.box-area{
 } */
 
 .rgbred{
-  background-color: #a83e43ef;
+  background-color: #992d33;
   color: #fff;
 }
 
@@ -1317,4 +1319,9 @@ a.page-link{
   height: 35px!important;
   background-image: url(../img/icon-arow-down-grey.svg)!important;
   background-size: 12px 9px!important;
+}
+
+.page-link:hover
+{
+  color: #973d3b;
 }

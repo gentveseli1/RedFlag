@@ -177,8 +177,8 @@
               </thead>
               <tbody>
                   <tr>
-                      <td class="rgbred">(1) </td>
-                      <td class="rgbred">“Furnizim me material për zyre për nevojat e Komunës Shtërpcë dhe shkollave ne teritorin e komunës Shtërpcë si dhe mjekësis familjare në teritorin e komunës Shtërpcë</td>
+                      <td>(1) </td>
+                      <td>“Furnizim me material për zyre për nevojat e Komunës Shtërpcë dhe shkollave ne teritorin e komunës Shtërpcë si dhe mjekësis familjare në teritorin e komunës Shtërpcë</td>
                       <td>N.P.T.,,PRO MIX’’</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2011/04/25</td>
@@ -287,7 +287,7 @@
                   <div class="col-11 margtop"><span class="totaltenders3">15,459</span><br><span class="totaltenders4">Totali i tenderëve me flamuj të kuq</span></div>
               </div>
               <div class="base6 col mt-2 p-0">
-                <p class="top10 pl-3 pt-3">Top 10 autoritetet kontraktuese me më së shumti flamuj të kuq</p><hr class="stili90">
+                <p class="top10 pl-3 pt-3 rgbred mb-0 ml-3 mr-3 mt-2">Top 10 autoritetet kontraktuese me më së shumti flamuj të kuq</p><hr class="stili90">
                   <div class="row pl-2">
                     <div class="col-2 pr-0">
                       <img src="img/icon.svg">
@@ -453,7 +453,7 @@
             <div class="col-md-12 col-lg-3 p-0" align="center">
               <div class="base7">
               <div class="col">
-                <p class="top10 pl-3 pt-4">Radhitja e indikatorëve në bazë të numrit të flamujve të kuq</p><hr class="stili90">
+                <p class="top10 pl-3 pt-3 rgbred mt-2">Radhitja e indikatorëve në bazë të numrit të flamujve të kuq</p><hr class="stili90">
                     <div class="row">
                       <div class="col-2 pr-0">
                         <img src="img/icon.svg">
@@ -578,9 +578,9 @@
 <div class="row footer1 mt-3">
   <div class="container">
     <div class="row ml-05 mr-05 dsa">
-      <div class="col-4 col-lg-4 align-self-center"><p class="copyright1">COPYRIGHT © 2019 / DPLUS</p></div>
+      <div class="col-4 col-lg-4 align-self-center pl-0"><p class="copyright1">COPYRIGHT © 2019 / DPLUS</p></div>
       <div class="col-4 col-lg-4 align-self-center" style="text-align:center"><p class="copyright1">PËRKRAHUR NGA: <img src="img/usaid.svg"></div>
-      <div class="col-4 col-lg-4 align-self-center" style="text-align:right"><p class="copyright1">PËR NE / KUFIZIMET E PORTALIT / ABONOHU</p></div>
+      <div class="col-4 col-lg-4 align-self-center pr-0" style="text-align:right"><p class="copyright1">PËR NE / KUFIZIMET E PORTALIT / ABONOHU</p></div>
     </div>
   </div>
 </div>
