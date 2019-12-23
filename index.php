@@ -31,7 +31,7 @@
 
         <div class="row top-header" style="z-index: 2000;">
           <div class="container d-flex">
-            <div class="col-lg-2 d-flex align-self-center">
+            <div class="col-lg-2 d-flex align-self-center pl-0">
               <img src="img/Flagi_Bardh.svg">
                 <p class="redflag">Red Flags</p>
             </div>
@@ -48,7 +48,7 @@
   <body>
     <div class="row under-header">
       <div class="container align-self-center">
-        <div class="col-12 col-sm-12 h-100">
+        <div class="col-12 col-sm-12 h-100 p-0">
           <p>
             <span class="description1">There are <span class="boldtobe">15,459</span> red flagged tenders out of <span class="boldtobe">45,345</span></span><br>
             <span class="description2">all information and tenders are from the public procurement system <span class="boldtobe">"eprokurorimi"</span>
