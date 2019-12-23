@@ -31,11 +31,11 @@
 
         <div class="row top-header" style="z-index: 2000;">
           <div class="container d-flex">
-            <div class="col-lg-3 d-flex align-self-center">
+            <div class="col-lg-2 d-flex align-self-center">
               <img src="img/Flagi_Bardh.svg">
                 <p class="redflag">Red Flags</p>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center align-self-center p-0">
+            <div class="col-lg-7 d-flex justify-content-center align-self-center p-0 ml-0">
               <form class="form-group form2"><input type="text" class="form-control searchbarsize" placeholder="Search"></form>
             </div>
             <div class="col-lg-3 align-self-center d-flex p-0" align="center">
@@ -177,7 +177,7 @@
             <table id="dataShownTable" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
               <thead>
                   <tr>
-                      <th style="width: 5%;" align="center"><img src="img/group20.svg"></th>
+                      <th style="width: 5%;" align="center"><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"></th>
                       <th style="width: 30%;">Titulli i tenderit</th>
                       <th style="width: 15%;">Furnizuesi</th>
                       <th style="width: 15%;">Blerësi</th>
@@ -187,15 +187,15 @@
               </thead>
               <tbody>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:">(1) </td>
-                      <td>“Furnizim me material për zyre për nevojat e Komunës Shtërpcë dhe shkollave ne teritorin e komunës Shtërpcë si dhe mjekësis familjare në teritorin e komunës Shtërpcë</td>
+                      <td class="rgbred">(1) </td>
+                      <td class="rgbred">“Furnizim me material për zyre për nevojat e Komunës Shtërpcë dhe shkollave ne teritorin e komunës Shtërpcë si dhe mjekësis familjare në teritorin e komunës Shtërpcë</td>
                       <td>N.P.T.,,PRO MIX’’</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
                       <td>2011/04/25</td>
                       <td>$320,800</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (8)</td>
+                      <td>(8)</td>
                       <td>RI TENDERServisimi i Aparateve kundër zjarrit për Gjykaten Themelore Mitrovicë me degët e saj në Regjionin e Mitrovices</td>
                       <td>“ 192.168.1.1. “ SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -203,7 +203,7 @@
                       <td>$170,750</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (8)</td>
+                      <td>(8)</td>
                       <td>"Furnizim me artikuj ushqimor për qerdhe,shtëpin e komunitetit,dita të shkollave dhe familje me nevojëRi tenderim</td>
                       <td>D.P.Z.,,Besarti K.Z. Servis”</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -211,7 +211,7 @@
                       <td>$86,000</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (4)</td>
+                      <td>(4)</td>
                       <td>Ndërtimi I tre rezervarëve të ujit për ujësjellsa ne fshatrat e KK Novobërdë Ndërtimi I tre rezervarëve të ujit për ujësjellsa ne fshatrat e KK Novo</td>
                       <td>“GRYKA” SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -219,7 +219,7 @@
                       <td>$433,060</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (1)</td>
+                      <td>(1)</td>
                       <td>FURNIZIMI ME INVENTAR PËR NEVOJAT E QKMF-se</td>
                       <td>N.N.SH: “Xhema Com”</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -227,7 +227,7 @@
                       <td>$162,700</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (6)</td>
+                      <td>(6)</td>
                       <td>FURNIZIMI ME INVENTAR PËR NEVOJAT E QKMF-se</td>
                       <td>N.P.SH. “ ELIONI.COM “</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -235,7 +235,7 @@
                       <td>$372,000</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (3)</td>
+                      <td>(3)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -243,7 +243,7 @@
                       <td>$372,000</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (2)</td>
+                      <td>(2)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -251,7 +251,7 @@
                       <td>$372,000</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (1)</td>
+                      <td>(1)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -259,7 +259,7 @@
                       <td>$372,000</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (8)</td>
+                      <td>(8)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -267,7 +267,7 @@
                       <td>$372,000</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:"> (7)</td>
+                      <td>(7)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>
@@ -275,7 +275,7 @@
                       <td>$372,000</td>
                   </tr>
                   <tr>
-                      <td><img src="img/group20.svg" class="bookingTd" title="Pershkrimi Indikatorit:">(7)</td>
+                      <td>(7)</td>
                       <td>2 “Furnizim me material administrativ dhe tonera të ndryshëm”</td>
                       <td>OFFICE 1 KOSOVA SH.P.K.</td>
                       <td>SHPK.,,PRO MIX. Servis”</td>

@@ -38,7 +38,7 @@ body {
 .padding40{padding-left: 40px;}
 .redflag{
   object-fit: contain;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -184,7 +184,7 @@ body {
   width: 100%;
   font-family: "Exo", sans-serif;
   color: #fff;
-  background: linear-gradient(-45deg, #aa482a, #992d33,#922f2f, #552929, #471a1c , #ad5a15);
+  background-color: #b14449;
   background-size: 400% 400%;
   animation: gradientBG 12s ease infinite;
 }
@@ -597,10 +597,10 @@ body {
   border-radius: 10px;
   border: 2px solid #f4f4f4;
   background-color: #fff;
-  background-image: url('../img/opac.svg');
+  /* background-image: url('../img/opac.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 300px 280px;
+  background-size: 300px 280px; */
 }
 .base7{width: 100%;
   height: 100%;
@@ -608,10 +608,10 @@ body {
   border-radius: 10px;
   border: 2px solid #f4f4f4;
   background-color: #fff;
-  background-image: url('../img/opac.svg');
+  /* background-image: url('../img/opac.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 300px 280px;
+  background-size: 300px 280px; */
 }
 .topnav a.icon {
   background: #ffff;
@@ -725,7 +725,7 @@ div.col-lg-3.align-self-center.d-flex > a {
 .colorgray{color: #7f7f7f;}
 a.one:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: -25px;
+  bottom: -22px;
   content: "";
   display: block;
   height: 4px;
@@ -741,11 +741,11 @@ a.one:hover:after {
 }
 a.two:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: -25px;
+  bottom: -22px;
   content: "";
   display: block;
   height: 4px;
-  left: 50%;
+  left: 52%;
   position: absolute;
   background: #fff;;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -757,7 +757,7 @@ a.two:hover:after {
 }
 a.three:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: -25px;
+  bottom: -22px;
   content: "";
   display: block;
   height: 4px;
@@ -1201,7 +1201,7 @@ div.row.ml-05.mr-05.dsa{
     margin-top: 2%!important;
   }
 }
-
+/* 
 ul.box-area{
   position: relative;
   top: 0;
@@ -1287,4 +1287,34 @@ ul.box-area{
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
   }
+} */
+
+/* @media (min-width: 992px){
+  .col-lg-b {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 21%;
+  }    
+} */
+
+.rgbred{
+  background-color: #a83e43ef;
+  color: #fff;
+}
+
+a.page-link{
+  color:#a73c42; 
+}
+
+.ms-choice > div{
+  background-repeat: no-repeat!important;
+  background-position: calc(100% - 12px) 50%!important;
+  -webkit-appearance: none!important;
+  -moz-appearance: none!important;
+  appearance: none!important;
+  width: 30px!important;
+  height: 35px!important;
+  background-image: url(../img/icon-arow-down-grey.svg)!important;
+  background-size: 12px 9px!important;
 }
