@@ -287,7 +287,7 @@
                   <div class="col-11 margtop"><span class="totaltenders3">15,459</span><br><span class="totaltenders4">Totali i tenderëve me flamuj të kuq</span></div>
               </div>
               <div class="base6 col mt-2 p-0">
-                <p class="top10 pl-3 pt-3 rgbred mb-0 ml-3 mr-3 mt-2">Top 10 autoritetet kontraktuese me më së shumti flamuj të kuq</p><hr class="stili90">
+                <p class="top10 pl-3 pt-4 rgbred m-0">Top 10 - Autoritetet Kontraktuese me më së shumti flamuj të kuq</p><hr class="stili90 mt-0">
                   <div class="row pl-2">
                     <div class="col-2 pr-0">
                       <img src="img/icon.svg">
@@ -453,7 +453,9 @@
             <div class="col-md-12 col-lg-3 p-0" align="center">
               <div class="base7">
               <div class="col">
-                <p class="top10 pl-3 pt-3 rgbred mt-2">Radhitja e indikatorëve në bazë të numrit të flamujve të kuq</p><hr class="stili90">
+                <div class="row">
+                  <p class="top10 pl-3 pt-4 rgbred m-0">Radhitja e indikatorëve në bazë të numrit të flamujve të kuq</p><hr class="stili90 mt-0">
+                </div>
                     <div class="row">
                       <div class="col-2 pr-0">
                         <img src="img/icon.svg">
